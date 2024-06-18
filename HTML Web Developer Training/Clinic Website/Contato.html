@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <h3>Menu</h3>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Horarios.html">Horários de atendimento</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img src="src/image/header-contato.png" />
+        </div>
+
+        <div class="content">
+          <!-- Aqui vai o seu conteúdo -->
+          <h1>Contato</h1>
+          <h3>Telefone para contato</h3>
+          <p>(11) 99999-9999</p>
+          <p>(11) 1234-5678</p>
+          <h3>Endereço</h3>
+          <p>Rua Saúde Plena, 123 - Centro, Cidade, Estado, CEP 12345-678</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2205901372354!2d-49.276932124610596!3d-25.430887677561174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce40d5a1c36c3%3A0x5ff06443a1d745f8!2sMinist%C3%A9rio%20da%20Sa%C3%BAde%20-%20SEMS%2FPR!5e0!3m2!1spt-BR!2sbr!4v1718735916200!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <form
+            action="#"
+            method="post"
+            onsubmit="alert('Enviado com sucesso');"
+          >
+            <fieldset>
+              <legend><h3>Dados para contato</h3></legend>
+
+              <label for="username">Nome: </label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Digite seu nome de usuário"
+                required
+              />
+
+              <label for="email">E-mail: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+
+              <label for="age">Idade:</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Digite sua idade"
+                required
+              />
+
+              <label for="gender">Gênero:</label>
+              <select id="gender" name="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="other">Outro</option>
+              </select>
+
+              <label for="assunto">Assunto: </label>
+              <input
+                type="text"
+                name="assunto"
+                id="assunto"
+                placeholder="Digite o assunto"
+                required
+              />
+
+              <label for="especialidade">Especialidade: </label>
+              <div class="radio-group">
+                <label for="clinico-geral">
+                  <input
+                    type="radio"
+                    id="clinico-geral"
+                    name="especialidade"
+                    value="Clinico Geral"
+                  />
+                  
+                  Clinico Geral
+                </label>
+                <label for="psicologo">
+                  <input
+                    type="radio"
+                    id="psicologo"
+                    name="especialidade"
+                    value="Psicologo"
+                  />
+                  
+                  Psicologo
+                </label>
+                <label for="pediatra">
+                  <input
+                    type="radio"
+                    id="pediatra"
+                    name="especialidade"
+                    value="Pediatra"
+                  />
+                  Pediatra
+                </label>
+                <label for="oftalmo">
+                  <input
+                    type="radio"
+                    id="oftalmo"
+                    name="especialidade"
+                    value="Oftalmo"
+                  />
+                  Oftalmo
+                </label>
+              </div>
+
+              <label for="message">Mensagem: </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+
+              <label for="termos">
+                <input type="checkbox" name="termos[]" id="termos1" value="termos1" /> Aceito os Termos 1
+                <input type="checkbox" name="termos[]" id="termos2" value="termos2" /> Aceito os Termos 2
+            </label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar formulário</button>
+          </form>
+        </div>
+
+        <div class="footer">
+          <footer>
+            <div
+              style="
+                text-align: center;
+                padding: 20px;
+                background-color: #f8f9fa;
+                border-top: 1px solid #e9ecef;
+              "
+            >
+              <p>
+                &copy; 2024 Clínica Vida Plena. Todos os direitos reservados.
+              </p>
+              <p>
+                <a href="https://www.clinicavidaplena.com" target="_blank"
+                  >www.clinicavidaplena.com</a
+                >
+                |
+                <a href="mailto:contato@clinicavidaplena.com"
+                  >contato@clinicavidaplena.com</a
+                >
+                | Tel: (11) 1234-5678
+              </p>
+              <p>
+                Rua Saúde Plena, 123 - Centro, Cidade, Estado, CEP 12345-678
+              </p>
+              <div>
+                <a
+                  href="https://www.facebook.com/clinicavidaplena"
+                  target="_blank"
+                  >Facebook</a
+                >
+                |
+                <a
+                  href="https://www.instagram.com/clinicavidaplena"
+                  target="_blank"
+                  >Instagram</a
+                >
+                |
+                <a
+                  href="https://www.twitter.com/clinicavidaplena"
+                  target="_blank"
+                  >Twitter</a
+                >
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
